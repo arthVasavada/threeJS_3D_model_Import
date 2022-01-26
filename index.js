@@ -1,16 +1,16 @@
 import * as THREE from "https://unpkg.com/browse/three@0.127.0/build/three.module.js"
-import {GLTFLoader} from "https://unpkg.com/browse/three@0.127.0/examples/jsm/loaders/GLTFLoader.js"
+//import {GLTFLoader} from "https://unpkg.com/browse/three@0.127.0/examples/jsm/loaders/GLTFLoader.js"
 
 const canvas = document.querySelector(".webgl")
 const scene = new THREE.Scene()
 
-const loader = new GLTFLoader
-loader.load("./assets/wraith.glb",function(glb){
-    console.log(glb)
-    const root = glb.scene
-    root.scale.set(0.03,0.03,0.03)
-    scene.add(root)
-})
+//const loader = new GLTFLoader
+//loader.load("./assets/wraith.glb",function(glb){
+//    console.log(glb)
+//   const root = glb.scene
+//    root.scale.set(0.03,0.03,0.03)
+//    scene.add(root)
+//})
 
 const light = new THREE.DirectionalLight(0xffffff,1)
 scene.add(light)
